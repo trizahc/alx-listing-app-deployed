@@ -19,7 +19,7 @@ export default function Home() {
         const fetchListings = async () => {
         try {
             const response = await 
-            axios.get(https://felikz97.pythonanywhere.com/api/properties);
+            axios.get("https://felikz97.pythonanywhere.com/api/properties");
             setProperties(response.data);
         } catch (err) {
             console.error(err);
