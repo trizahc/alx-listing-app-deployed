@@ -43,11 +43,11 @@ export default function BookingForm() {
       const accessToken = localStorage.getItem("access_token");
 
       const response = await axios.post(
-        ${process.env.NEXT_PUBLIC_API_BASE_URL}/api/bookings/,
+        `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/bookings/`,
         formData,
         {
           headers: {
-            Authorization: Bearer ${accessToken},
+            Authorization: `Bearer ${accessToken}`,
           },
         }
       );

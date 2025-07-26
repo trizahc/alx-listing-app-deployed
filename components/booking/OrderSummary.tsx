@@ -1,3 +1,4 @@
+
 const OrderSummary: React.FC<{ bookingDetails: any }> = ({ bookingDetails }) => (
   <div className="bg-white p-6 shadow-md rounded-lg">
     <h2 className="text-xl font-semibold">Review Order Details</h2>
@@ -10,6 +11,7 @@ const OrderSummary: React.FC<{ bookingDetails: any }> = ({ bookingDetails }) => 
       </div>
     </div>
 
+    {/* Price Breakdown */}
     <div className="mt-6">
       <div className="flex justify-between">
         <p>Booking Fee</p>

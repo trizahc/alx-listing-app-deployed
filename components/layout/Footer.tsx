@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-100 text-center text-gray-600 py-4 mt-10">
-      <p>&copy; {new Date().getFullYear()} MyListing. All rights reserved.</p>
+    <footer className="bg-gray-800 text-white text-center p-4 mt-auto">
+      <p>&copy; {new Date().getFullYear()} ALX Listing App. All rights reserved.</p>
     </footer>
   );
 };
